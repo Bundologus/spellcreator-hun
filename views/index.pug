@@ -1,5 +1,54 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+
+  div(class="row mt-5")
+    div(class="col-12 text-center")
+      h1 Üdvözöllek a #{title}en
+
+  div(class="row mt-5")
+    div(class="col-12")
+      h2 Publikus varázslatok
+      table(class="table")
+        thead
+          tr
+            th(scope="col") Név
+            th(scope="col") Szint
+            th(scope="col") Iskola
+            th(scope="col") Var. idő
+            th(scope="col") Hatótáv
+            th(scope="col") Komponensek
+            th(scope="col") Hatóidő
+            th(scope="col") Kasztok
+            th(scope="col") Forrás
+        tbody
+          tr
+            td Altatás
+            td 1
+            td inkantáció
+            td 1 A
+            td 90 láb
+            td V, Sz, M
+            td 1 perc
+            td Bárd, Mágus, Varázsló
+            td phb 276
+          tr
+            td Azonosítás
+            td 1
+            td divináció
+            td 1 perc (R)
+            td Érintés
+            td V, Sz, M*
+            td Azonnali
+            td Bárd, Varázsló
+            td phb 252
+          tr
+            td Áldás
+            td 1
+            td inkantáció
+            td 1 A
+            td 30 láb
+            td V, Sz, M
+            td C 1 perc
+            td Pap, Paplovag
+            td phb 219
