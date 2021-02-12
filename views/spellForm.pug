@@ -1,0 +1,90 @@
+extends layout
+
+block content
+
+    div(class="row mt-5")
+        form(class="w-100")
+            div(class="form-group")
+                label(for="name") Név
+                input(type="text" class="form-control" id="name")
+            div(class="form-group")
+                label(for="school") Iskola
+                select(class="form-control" id="school")
+                    option(value="abjuration") abjuráció
+                    option(value="divination") divináció
+                    option(value="evocation") evokáció
+                    option(value="illusion") illúzió
+                    option(value="enchantment") inkantáció
+                    option(value="conjuration") konjuráció
+                    option(value="necromancy") nekromancia
+                    option(value="transmutation") transzmutáció
+            div(class="form-group")
+                label(for="level") Szint
+                select(class="form-control" id="level")
+                    option(value="-1") Varázstrükk
+                    option(value="1") 1
+                    option(value="2") 2
+                    option(value="3") 3
+                    option(value="4") 4
+                    option(value="5") 5
+                    option(value="6") 6
+                    option(value="7") 7
+                    option(value="8") 8
+                    option(value="9") 9
+            div(class="form-row")
+                div(class="form-group")
+                    label(for="casting_time") Varázslási idő
+                    input(type="text" class="form-control" id="casting_time")
+                div(class="form-check ml-4")
+                    div(class="form-group")
+                        input(class="form-check-input" type="checkbox" value="true" id="concentration")
+                        label(class="form-check-label" for="concentration") Koncentrációs
+                    div(class="form-group")
+                        input(class="form-check-input" type="checkbox" value="true" id="ritual")
+                        label(class="form-check-label" for="ritual") Rituális
+            div(class="form-group")
+                label(for="range") Hatótáv
+                input(type="text" class="form-control" id="range")
+            label(for="components") Komponensek
+            div(class="form-row")
+                div(class="form-group")
+                    div(class="form-check form-check-inline" id="components")
+                        input(class="form-check-input ml-1" type="checkbox" value="true" id="verbal")
+                        label(class="form-check-label" for="verbal") Verbális
+                        input(class="form-check-input ml-5" type="checkbox" value="true" id="somatic")
+                        label(class="form-check-label" for="somatic") Szomatikus
+                        input(class="form-check-input ml-5" type="checkbox" value="true" id="material")
+                        label(class="form-check-label" for="material") Materiális
+            div(class="form-group")
+                label(for="material-desc") Materiális leírás
+                input(class="text" class="form-control" id="material-desc")
+            div(class="form-group")
+                label(for="duration") Hatóidő
+                input(type="text" class="form-control" id="duration")
+            div(class="form-group")
+                label(for="description") Leírás
+                textarea(class="form-control" id="description" rows="7")
+            div(class="form-group")
+                label(for="description_high") Magasabb szinten
+                textarea(class="form-control" id="description_high" rows="3")
+            div(class="form-group")
+                label(for="book") Forrás
+                input(type="text" class="form-control" id="book")
+            div(class="form-group")
+                label(for="classes") Kasztok
+                select(multiple class="form-control" id="classes")
+                    option(value="barbarian") Barbár
+                    option(value="bard") Bárd
+                    option(value="warlock") Boszorkánymester
+                    option(value="druid") Druida
+                    option(value="fighter") Harcos
+                    option(value="sorcerer") Mágus
+                    option(value="cleric") Pap
+                    option(value="paladin") Paplovag
+                    option(value="monk") Szerzetes
+                    option(value="wizard") Varázsló
+                    option(value="ranger") Vándor
+                    option(value="rogue") Zsivány
+
+
+                
